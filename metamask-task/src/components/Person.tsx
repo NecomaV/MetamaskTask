@@ -14,7 +14,9 @@ export const Person: FC<Props> = ({name, age, email}) => {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         setCountry(event.target.value)
     }
+
   return (
+    
     <div>
       <h1> {name} </h1>
       <h1> {age} </h1>
