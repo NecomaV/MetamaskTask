@@ -1,17 +1,18 @@
 import React from 'react'
-import { NavbarData } from './NavbarData'
+import '../all.css' 
 
 type Props = {}
 
 function Navbar({}: Props) {
   return (
     <div>
-        {NavbarData.map((val, key) => {
-            return (
-                
-            )
-        })}
 
+        <nav className='navigation'>
+          <ul className='nav__links'>
+            <li>LOGO</li>
+            <li>CONNECT METAMASK</li>
+          </ul>
+        </nav>
 
     </div>
   )
