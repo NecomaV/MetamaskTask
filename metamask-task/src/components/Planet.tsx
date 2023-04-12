@@ -12,7 +12,7 @@ export default function Planet({}: Props) {
                         <div className="planet__container_4">
                             <div className="planet__container_5">
                                 <div className="planet__container_img">
-                                    <img src={planet} alt="" />
+                                    <img src={planet} alt="" id='blend'/>
                                 </div>
                             </div>
                         </div>

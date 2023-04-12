@@ -57,28 +57,36 @@
     border-radius: 30px;
 
     padding: 10px, 24px, 7px, 24px;
+
+    cursor: pointer;
 }
 
 .content {
     margin-top: 188px;
-    margin-left: 64px;
+    z-index: 1;
+    background-color: transparent;
 }
 
 .content p{
    font-size: 120px;
    line-height: 144px;
-   
-   color: #ffff;
+   background-color: transparent;
+   color: #FFFF;
+   mix-blend-mode: darken;
+
 }
+
 
 .content p > span{
     color: #171719;
     text-shadow: -1px 0 #FFFF, 0 1px #FFFF, 1px 0 #FFFF, 0 -1px #FFFF;
+    background-color: transparent;
+
 }
 
 .descr {
-    margin-top: 45px;
-    margin-left: 64px;
+    margin-left: 83px;
+    margin-bottom: 60px;
 
     font-size: 16px;
     line-height: 19.2px;
@@ -90,7 +98,7 @@
 }
 .container {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-around;  
 }
 
 .roadmap {
@@ -98,14 +106,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 64px;
     margin-top: 205px;
     gap: 42px;
+    z-index: 3;
+
+    background-color: transparent;
 }
 
-.roadmap {
+.roadmap h3{
     font-size: 32px;
     color: #FFFFFF;
+    background-color: transparent;
+
 }
 
 .stats {
@@ -114,12 +126,15 @@
     align-items: center;
     justify-content: center;
 
+    background-color: transparent;
     
 
 }
 .stats h4 {
     font-size: 28px;
     line-height: 33px;
+    background-color: transparent;
+
     color: #E75626;
 
 }
@@ -127,6 +142,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFF;
+    background-color: transparent;
 
     margin-top: 12px;
     margin-bottom: 8px;
@@ -142,10 +158,11 @@
     position: absolute;
     width: 532px;
     height: 532px;
-    left: 621px;
+    left: 654px;
     top: 104px;
     border-radius: 100%;
 
+    z-index: 0;
     background: #212124;
 }
 
@@ -204,7 +221,8 @@
     width: 320px;
     height: 322px;
     filter: blur(0px);
-
+    
+    color: yellow;
     border-radius: 100%;
 }
 
@@ -213,5 +231,118 @@
     height: 322px;
     filter: blur(0px);
     border-radius: 100%;
+}
 
+/* Registarion block  */
+
+.cont { 
+    margin-left: 64px;
+    margin-top: 60px;
+    height: 697px;
+}
+
+.cont__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+
+    margin-top: 48px;
+    margin-bottom: 36px;
+
+    width: 421px;
+    height: 95px;
+}
+
+.cont__content h3{
+
+    font-size: 36px;
+    line-height: 43.2px;
+    color: #E75626;
+    
+}
+.cont__content p{
+
+    width: 100%;
+    color: #FFFF;
+
+    font-size: 16px;
+    line-height: 19.2px;
+
+}
+.cont__registr {
+    margin-top: 72px;
+}
+
+.cont__registr form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 24px;
+
+}
+.cont__regist_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.cont__regist_name label {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color:#FFFFFF
+}
+.cont__regist_name input { 
+    width: 100%;
+    border: 1px solid #FFFF;
+    padding: 12px 120px 12px 18px;
+    color: #FFFFFF;
+
+    border-radius: 30px;
+}
+
+.cont__regist_email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.cont__regist_email label {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color:#FFFFFF
+}
+.cont__regist_email input { 
+    width: 100%;
+    border: 1px solid #FFFF;
+    padding: 12px 120px 12px 18px;
+    color: #FFFFFF;
+
+    border-radius: 30px;
+}
+
+.cont__registr form button {
+    width: 148px;
+    height: 38px;
+    background-color: #E75626;
+    color: #FFFF;
+    font-size: 18px;
+    line-height: 21.6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border:none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    padding: 10px, 24px, 7px, 24px;
 }

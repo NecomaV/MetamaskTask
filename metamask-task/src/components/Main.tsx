@@ -9,9 +9,9 @@ export default function Main({}: Props) {
   return (
     <div>
         <div className="container">
-            <div className="content">
-                <p>Explore Your own planet</p>
-                <p>In <span>our</span> New metaverse</p>
+            <div className="content" >
+                <p >Explore Your own planet</p>
+                <p >In <span>our</span> New metaverse</p>
             </div>
             <div className="roadmap">
                 <h3>ROADMAP STATS</h3>
@@ -21,8 +21,8 @@ export default function Main({}: Props) {
 
             </div>
         </div>
-        <div className="planet">
-            <Planet/>
+        <div className="planet" >
+            <Planet />
         </div>
 
         <div className="descr">
