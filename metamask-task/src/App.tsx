@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Main from './components/Main'
 import Registration from './components/Registration';
+import Table from './components/Table';
+import Profile from './components/Profile';
 
 const App: FC = () => {
  
@@ -10,7 +12,11 @@ const App: FC = () => {
     <div className="App">
       <Navbar/>
       <Main/>
-      <Registration/>
+      <div className="reg_container">
+        <Profile />
+      </div>
+      
+
     </div>
   );
 }
